@@ -1,10 +1,10 @@
 import React, {Component} from "react";
-import './stock-block.css'
+import './stock-block.sass'
 
 export default class StockBlock extends Component {
 
     componentDidMount(){
-        const deadTime = '2022-09-28T06:55:28.214Z';
+        const deadTime = '2022-11-20T06:55:28.214Z';
 
         function getTime(endtimes){
           const  t = Date.parse(endtimes) - Date.parse(new Date()),
@@ -64,6 +64,8 @@ export default class StockBlock extends Component {
                 <div class="header__bottom"></div>
                 <div class="promotion">
                     <div class="promotion__block">
+                      <div className="stock-column"></div>
+                      <div className="stock-bottom"></div>
                         <div class="promotion__text">
                         <div class="title">Акция для новых клиентов!</div>
                         <div class="promotion__descr">

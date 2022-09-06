@@ -1,21 +1,10 @@
 import React from "react"; 
-import styled from "styled-components";
-import './pages.css'
+import './pages.sass'
 
-
-const Equalizer = styled.div`
-    display: flex;
-    margin: 0 auto;
-    height: 560px;
-    background-color:rgb(230, 230, 222);
-    transform: rotate(180deg);
-    position: relative;
-
-`
 
 const Homepage = () => {
     return(
-        <Equalizer>
+        <div className="equalizer">
             <div className="eq"></div>
             <div className="eq eq2"></div>
             <div className="eq eq3"></div>
@@ -41,7 +30,7 @@ const Homepage = () => {
             <div className="eq eq23"></div>
             <div className="eq eq24"></div>
             <div className="title-homepage">Welcome to site amplifire. Pleace click main links</div>
-        </Equalizer>
+        </div>
     )
 }
 export default Homepage;
