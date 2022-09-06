@@ -1,0 +1,505 @@
+@import "src/sass/_vars"
+@import "src/sass/_mixins"
+.equalizer
+    display: flex
+    margin: $margin-center
+    min-height: 620px
+    background-color:rgb(230, 230, 222)
+    transform: rotate(180deg)
+    position: relative
+    overflow: hidden
+    z-index: 0
+    .eq
+        margin: 40px auto 0
+        width:  2%
+        border-radius: 7px
+        height: 500px
+        background-color: rgb(132, 132, 130)
+        animation-name: column1
+        animation-duration: 1.5s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column1
+            @include animation
+    .eq2
+        animation-name: column2
+        animation-duration: 1.6s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column2
+            @include animation
+    .eq3
+        animation-name: column3
+        animation-duration: 1.7s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+    @keyframes column3
+        @include animation
+    .eq4
+        animation-name: column4
+        animation-duration: 1.8s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column4
+            @include animation
+    .eq5
+        animation-name: column5
+        animation-duration: 1.9s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column5
+            @include animation
+    .eq6
+        animation-name: column6
+        animation-duration: 2s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column6
+            @include animation
+    .eq7
+        animation-name: column7
+        animation-duration: 1.9s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column7
+            @include animation
+    .eq8
+        animation-name: column8
+        animation-duration: 1.8s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column8
+            @include animation
+    .eq9
+        animation-name: column9
+        animation-duration: 1.9s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column9
+            @include animation
+    .eq10
+        animation-name: column10
+        animation-duration: 2s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column10
+            @include animation
+    .eq11
+        animation-name: column11
+        animation-duration: 1.9s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column11
+            @include animation
+    .eq12
+        animation-name: column12
+        animation-duration: 2.3s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column12
+            @include animation
+    .eq13
+        animation-name: column13
+        animation-duration: 2.5s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column13
+            @include animation
+    .eq14
+        animation-name: column14
+        animation-duration: 2.2s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column14
+            @include animation
+    .eq15
+        animation-name: column15
+        animation-duration: 1.9s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column15
+            @include animation
+    .eq16
+        animation-name: column16
+        animation-duration: 2.2s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column16
+            @include animation
+    .eq17
+        animation-name: column17
+        animation-duration: 1.8s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column17
+            @include animation
+    .eq18
+        animation-name: column18
+        animation-duration: 2s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column18
+            @include animation
+    .eq19
+        animation-name: column19
+        animation-duration: 1.7s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column19
+            @include animation
+    .eq20
+        animation-name: column20
+        animation-duration: 1.9s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column20
+            @include animation
+    .eq21
+        animation-name: column21
+        animation-duration: 1.6s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column21
+            @include animation
+    .eq22
+        animation-name: column22
+        animation-duration: 2s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column22
+            @include animation
+    .eq23
+        animation-name: column23
+        animation-duration: 1.7s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column23
+            @include animation
+    .eq24
+        animation-name: column24
+        animation-duration: 2s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        @keyframes column24
+            @include animation
+    .title-homepage
+        position: absolute
+        top : 250px
+        left: -70px
+        width: 100%
+        transform: rotate(180deg)
+        font-size: 57px
+        color:#034a9558
+.promo
+    margin: $margin-center
+    display: flex
+    background-color:rgb(230, 230, 222)
+    position: relative
+    .tabsconteiner
+        display: flex
+        margin: 20px auto
+        padding: 10px
+        justify-content: center
+        width: 100%
+        height: 620px
+        text-align: center
+        color: #070606
+        z-index: 3
+        .tabscontent
+            margin: $margin-center
+            position: relative
+            width: 60%
+            height: 700px
+            .tab-img
+                width: 100%
+                height: 450px
+                background:url(../../img/A1.jpg) $center-cover
+            .img2
+                background: url(../../img/A2.jpg) $center-cover
+            .img3
+                background: url(../../img/A3.jpg) $center-cover
+            .img4
+                background: url(../../img/A3.jpg) $center-cover
+            .img5
+                background: url(../../img/A5.jpg) $center-cover
+            .tabsdescr
+                position: absolute
+                padding: 20px
+                top: 400px
+                left: 20px
+                max-width: 85%
+                min-height: 250px
+                background-color:#363a3fb7
+                font-size: 19px
+                font-weight: 400
+                text-align: start
+                line-height: 28px
+                color: rgb(255, 255, 255)
+        .tabsheader
+            margin: $margin-center
+            width: 35%
+            font-size: 26px
+            position: relative
+            .tabs__column
+                position: absolute
+                left: 30px
+                height: 100%
+                width: 1px
+                background-color: #343a40
+            .tabsheader__bottom
+                margin-left: 10px
+                height: 1px
+                width: 90%
+                background-color: #363a3f
+            .tabsitem  
+                font-size: 27px
+                margin-top: 15px
+                text-align: center
+                color: #363a3f
+                &:hover
+                    cursor: pointer
+                    border: none
+                    color: #007bff
+            .tabsitem_activ
+                font-size: 27px
+                font-weight: 700 
+                color:  #007bff
+@media(max-width:1000px)
+    .tabsdescr
+        font-size: 14px
+@media(max-width: 800px)
+    .tabsheader
+        font-size: 22px
+    .tabsitem
+        font-size: 20px
+.hide
+    display: none
+.show
+    display: block
+.fade
+    animation-name: fade
+    animation-duration: 1s
+    @keyframes fade
+        from 
+            opacity: 0.3 
+        to 
+            opacity: 1
+.slides
+    min-height: 620px
+    position: relative
+    @include flex-between-center
+    background-color:rgb(230, 230, 222)
+    margin: $margin-center
+    width: 100%
+    span
+        margin: $margin-center
+        font-size: 35px
+        text-decoration: underline
+        color:#007bff74
+        position: absolute
+        top: 20px 
+    .slides_descr
+        width: 25%
+        margin: $margin-center
+        position: relative
+        .descr-column
+            position: absolute
+            right: 30px
+            width: 1px
+            height: 100%
+            background-color: #070606
+        .descr-bottom
+            position: absolute
+            bottom: 20px
+            right: 10px
+            height: 1px
+            width: 100%
+            background-color: #070606
+    .slider
+        width: 60%
+        position: relative
+        margin: 10px auto
+        .slide-column
+            position: absolute
+            top: 95px
+            left: -20px
+            width: 1px
+            height: 82%
+            background-color: #070606
+        .slide-bottom
+            position: absolute
+            top: 120px
+            left: -45px
+            height: 1px
+            width: 105%
+            background-color: #070606
+        .slides_wrap
+            margin: 60px auto 0
+            width: 100%
+            height: 600px
+            position: relative
+            overflow: hidden
+            z-index: 3
+            .slide-nav
+                margin: 10px auto
+                @include flex-around-center
+                .slide-counter
+                    display: flex
+                    align-items: center
+                    #current
+                        font-size: 35px
+                        font-weight: 700
+                        color:#036ad7
+                    #total
+                        font-size: 30px
+                        font-weight: 400
+                        color: #505050
+                    #razd
+                        margin: 0 8px
+                        font-size: 45px
+                        font-weight: 700
+                        color:#343a40
+                #r
+                    font-size: 50px
+                    color:#505050
+                    cursor: pointer
+                #l
+                    width: 44px
+                    font-size: 50px
+                    cursor: pointer
+                    color: #505050
+            .slides_inner
+                display: flex
+                .slide-img
+                    background: url(../../img/slides/1.jpg) $center-cover 
+                    height: 500px
+                    width: 100%
+                .img22
+                    background: url(../../img/slides/2.jpg) $center-cover
+                .img33
+                    background: url(../../img/slides/3.jpg) $center-cover
+                .img44
+                    background: url(../../img/slides/4.jpg) $center-cover
+                .img55
+                    background: url(../../img/A4.jpg) $center-cover
+#current
+    font-size: 35px
+    font-weight: 700
+    color:#036ad7
+#total
+    font-size: 30px
+    font-weight: 400
+    color: #505050
+#razd
+    margin: 0 8px
+    font-size: 45px
+    font-weight: 700
+    color:#343a40
+.carousel-indicators 
+    position: absolute
+    bottom: 30px
+    left: calc(50% - (300px / 2))
+    display: flex
+    list-style: none
+.descr
+    font-size: 18px
+    font-weight: 500
+    margin-bottom: 60px
+.descr_activ
+    font-size: 23px;
+    color:#007bff
+.dot 
+    border-radius: 10px
+    margin-right: 15px
+    width: 40px
+    height: 10px
+    cursor: pointer
+    background-color: rgb(255, 255, 255)
+    opacity: .3
+    transition: opacity .6s ease
+@media(max-width:1000px)
+    .slides
+        flex-direction: column-reverse
+    .slides_wrap
+        width: 90%
+    .slides_descr
+        margin: 0 auto
+        width: 90%
+.cards
+    padding: 10px
+    background-color: rgb(231, 231, 231)
+    min-height: 640px
+    text-align: center
+    position: relative
+    .oup
+        margin: 0 auto
+        font-size: 35px
+        font-weight: 500
+        text-decoration: underline
+        color: #007bff7d
+    .cards_wrap
+        margin: 20px auto
+        display: flex
+        flex-wrap: wrap
+        position: relative
+        z-index: 3
+        .card
+            margin: 10px 10px 20px 20px  
+            width: 300px
+            height: 525px
+            box-shadow: 0 0 10px 5px rgb(141, 141, 141)
+            border: none
+            transition: all 0.2s ease
+            &:hover
+                box-shadow: 0 0 15px 7px gray
+                cursor: pointer
+                transform: scale(1.1, 1.1) 
+            .card-img 
+                width: 300px
+                height: 300px
+                background: url(../../img/A1.jpg) $center-cover
+            .img2
+                background: url(../../img/A2.jpg) $center-cover
+            .img3
+                background: url(../../img/A3.jpg) $center-cover
+            .img4
+                background: url(../../img/A4.jpg) $center-cover
+            .img5
+                background: url(../../img/A5.jpg) $center-cover
+            .card-title
+                margin: 10px auto 0
+                text-align: center
+                font-size: 22px
+                font-weight: 600
+                color: #007bff
+            .card-descr
+                padding: 10px
+                font-size: 20px
+            .card-price
+                display: flex
+                justify-content: center
+                align-items: center
+                margin: 15px auto
+                font-weight: 600
+                font-size: 20px
+                span 
+                    color: #df0101
+                    font-size: 30px
+                    margin-right: 20px
+@media(max-width:1600px)
+    .cards_wrap
+        flex-wrap: wrap
+    .card
+        margin-top: 30px 
+.cable-img
+    width: 300px
+    height: 300px
+    background: url(../../img/cable/cable1.jpg) $center-cover
+.img12
+    background: url(../../img/cable/cable2.jpg) $center-cover
+.img13
+    background: url(../../img/cable/cable3.jpg) $center-cover
+.img14
+    background: url(../../img/cable/cable4.jpg) $center-cover
+.img15
+    background: url(../../img/cable/cable5.jpg) $center-cover

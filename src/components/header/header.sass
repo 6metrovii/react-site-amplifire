@@ -1,0 +1,105 @@
+@import "src/sass/_vars"
+@import "src/sass/_mixins"
+.header
+    min-height: 120px
+    max-width: 100%
+    background-color:#f5f2f2
+    @include flex-between
+    position: relative
+    .logo
+        margin: 10px auto
+        width: 8%
+        height: 5vw
+        cursor: pointer
+        background: url(../../img/logo.png) $center-cover
+        position: relative
+        z-index: 3
+        transition: all 0.2s linear
+        &:hover
+            transform: scale(0.95, 0.95)
+            background-color: #f5f2
+    .navigation
+        margin: 20px auto 0
+        width: 55%
+        height: 50px
+        display: flex
+        color:  #363a3f
+        position: relative
+        .navigation-column
+            position: absolute
+            left: -20px
+            top: -20px
+            height: 300%
+            width: 1px
+            background-color: black
+        .navigation-bottom
+            position: absolute
+            left: -60px
+            bottom: -30px
+            height: 1px
+            width: 110%
+            background-color: black
+        .nav-item
+            color:  #626363
+            font-size: 20px
+            font-weight: 400
+            transition: all 0.2s linear
+            margin: 5px auto
+            text-decoration: none
+            position: relative
+            z-index: 3
+            &:hover
+                color: #007bff
+        .cards-category
+            position: absolute
+            display: flex
+            width: 15%
+            right: 20px
+            bottom: -20px
+            .category-item
+                text-decoration: none
+                font-size: 20px
+                color: #343a40
+                margin-right: 30px
+                &:hover
+                    color: #016de0
+            .active-catalog
+                color: #016de0
+                font-weight: 600
+                text-decoration: overline
+        .hide
+            display: none        
+        .active-item
+            color: #016de0
+            font-weight: 600
+            text-decoration: overline
+    .btn_contact
+        margin: 30px auto 0
+        margin-bottom: 20px
+        width: 200px
+        height: 52px
+        border: none
+        background-color: rgb(207, 204, 204)
+        box-shadow: 0 0 10px 2px rgb(115, 115, 115)
+        color: #363a3f
+        transition: all 0.2s linear
+        font-size: 20px
+        position: relative
+        z-index: 3
+        &:hover
+            background-color: #343a40
+            color: #fdfdfd
+            transform: scale(0.97)
+.header__bottom
+    background-color:  #363a3f
+    height: 35px
+    position: relative
+    z-index: 3
+@media(max-width: 1200px)
+    .navigation
+        flex-direction: column
+        margin: 0 auto
+@media(max-width:800px)
+    .btn_contact
+        width: 160px
+        font-size: 14px

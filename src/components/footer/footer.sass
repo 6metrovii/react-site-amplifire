@@ -1,0 +1,45 @@
+@import "src/sass/_vars"
+@import "src/sass/_mixins"
+.footer
+    margin: $margin-center
+    padding:  10px 50px
+    max-width: 100%
+    height: 130px
+    background-color: #505050
+    @include flex-between
+    position: relative
+    z-index: 5
+    .footer__links
+        @include flex-column
+        color: white
+        font-size: 18px
+        #insta
+            color: rgb(246, 6, 206)
+        #facebook
+            color: rgb(61, 112, 250)
+        #telega
+            color: rgb(33, 58, 244) 
+        i
+            margin: 6px 0
+            color: white
+            font-size: 25px
+            display: flex
+            align-items: center
+            span
+                margin-left: 15px
+                font-size: 20px
+                font-family: 'Ubuntu'
+                &:hover
+                    color: #0d0d0d
+                    cursor: pointer
+                    text-decoration: underline
+    .footer__contacts
+        @include flex-column
+        color: white
+        font-size: 18px   
+        .footer__contact
+            margin-top: 10px
+            color: white
+            font-size: 20px
+
+
