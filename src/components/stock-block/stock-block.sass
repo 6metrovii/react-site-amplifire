@@ -1,15 +1,13 @@
-.header__bottom
-    background-color:  #363a3f
-    height: 35px
 .promotion
+    min-height: 300px
     display: flex
     background-color:#c0bfbf
     position: relative
     z-index: 5
-    .promotion__block
-        margin: 40px auto 0
-        height: 230px
-        max-width: 600px
+    .promotion-block
+        margin: 30px auto 0
+        min-height: 230px
+        max-width: 50%
         position: relative
         .stock-column
             position: absolute
@@ -31,8 +29,8 @@
             font-size: 25px
             font-weight: 600
             color:#007bff
-        .promotion__descr 
-            margin-top: 40px
+        .promotion-descr 
+            margin-top: 30px
             font-size: 18px
             line-height: 30px
             font-weight: 400
@@ -41,8 +39,9 @@
                 font-size: 30px
                 margin-left: 10px
                 color: #c40404
-    .promotion__timer
-        margin: 40px auto 20px
+    .promotion-timer
+        max-width: 50%
+        margin: 30px auto 20px
         height: 200px
         font-size: 18px
         .title
@@ -53,10 +52,11 @@
             color:#007bff
         .timer
             margin: 0 auto
-            min-width: 400px
+            width: 100%
             display: flex
-            .timer__item
-                margin: 0 auto 
+            .timer-item
+                width: 22%
+                margin-left: 10px
                 padding: 10px
                 height: 130px
                 display: flex

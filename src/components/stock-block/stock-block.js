@@ -61,36 +61,36 @@ export default class StockBlock extends Component {
     render(){
         return(
             <>
-                <div class="header__bottom"></div>
+                <div class="header-bottom"></div>
                 <div class="promotion">
-                    <div class="promotion__block">
+                    <div class="promotion-block">
                       <div className="stock-column"></div>
                       <div className="stock-bottom"></div>
-                        <div class="promotion__text">
+                        <div class="promotion-text">
                         <div class="title">Акция для новых клиентов!</div>
-                        <div class="promotion__descr">
+                        <div class="promotion-descr">
                         Мы ценим каждого клиента и предлагаем вам стать одним из них на очень выгодных условиях. 
                         Каждому, кто закажет усилитель в комплекте с акустическими кабелями, будет предоставлена скидка в размере <span>20%!</span>
                         Акция закончится 20 ноября в 00:00
                         </div>
                         </div>
                     </div>
-                    <div class="promotion__timer">
+                    <div class="promotion-timer">
                         <div class="title">Осталось до конца акции:</div>
                         <div class="timer">
-                            <div class="timer__item">
+                            <div class="timer-item">
                                 <span id="days">12</span>
                                 дней
                             </div>
-                            <div class="timer__item">
+                            <div class="timer-item">
                                 <span id="hours">20</span>
                                 часов
                             </div>
-                            <div class="timer__item">
+                            <div class="timer-item">
                                 <span id="minutes">56</span>
                                 минут
                             </div>
-                            <div class="timer__item">
+                            <div class="timer-item">
                                 <span id="seconds">20</span>
                                 секунд
                             </div>

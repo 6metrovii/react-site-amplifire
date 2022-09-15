@@ -14,7 +14,7 @@ const CablePage = () =>{
         <>
             <div class="cards" >
                 <div class="oup">Кабели акустические</div>
-                <div class="cards_wrap">
+                <div class="cards-wrap">
                     {cable1}
                     {cable2}
                     {cable3}

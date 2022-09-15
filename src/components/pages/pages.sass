@@ -184,13 +184,16 @@
             @include animation
     .title-homepage
         position: absolute
-        top : 250px
-        left: -70px
+        bottom: 50px
         width: 100%
         transform: rotate(180deg)
         font-size: 57px
+        text-align: center
         color:#034a9558
+        @media( max-width: 1200px)
+            font-size: 40px
 .promo
+    min-height: 620px
     margin: $margin-center
     display: flex
     background-color:rgb(230, 230, 222)
@@ -201,19 +204,20 @@
         padding: 10px
         justify-content: center
         width: 100%
-        height: 620px
         text-align: center
         color: #070606
         z-index: 3
         .tabscontent
             margin: $margin-center
             position: relative
-            width: 60%
-            height: 700px
+            width: 70%
+            min-height: 700px
             .tab-img
-                width: 100%
+                width: 80%
                 height: 450px
                 background:url(../../img/A1.jpg) $center-cover
+                @media(max-width: 1200px)
+                    width: 100%
             .img2
                 background: url(../../img/A2.jpg) $center-cover
             .img3
@@ -227,7 +231,7 @@
                 padding: 20px
                 top: 400px
                 left: 20px
-                max-width: 85%
+                width: 80%
                 min-height: 250px
                 background-color:#363a3fb7
                 font-size: 19px
@@ -235,43 +239,46 @@
                 text-align: start
                 line-height: 28px
                 color: rgb(255, 255, 255)
+                @media(max-width: 1200px)
+                    font-size: 14px
+                    width: 90%
         .tabsheader
             margin: $margin-center
             width: 35%
-            font-size: 26px
+            font-size: 24px
             position: relative
-            .tabs__column
+            @media(max-width: 1200px)
+                font-size: 20px
+            .tabs-column
                 position: absolute
-                left: 30px
+                top: -1%
+                left: 20px
                 height: 100%
                 width: 1px
                 background-color: #343a40
-            .tabsheader__bottom
-                margin-left: 10px
+            .tabsheader-bottom
                 height: 1px
-                width: 90%
+                width: 100%
                 background-color: #363a3f
             .tabsitem  
-                font-size: 27px
+                width: 90%
+                margin: $margin-center
+                font-size: 25px
                 margin-top: 15px
-                text-align: center
                 color: #363a3f
+                @media(max-width: 1000px)
+                    font-size: 20px
                 &:hover
                     cursor: pointer
                     border: none
-                    color: #007bff
-            .tabsitem_activ
-                font-size: 27px
+                    background:  #4c4d4d52
+                    border-radius: 15px
+            .tabsitem-activ
+                font-size: 26px
                 font-weight: 700 
                 color:  #007bff
-@media(max-width:1000px)
-    .tabsdescr
-        font-size: 14px
-@media(max-width: 800px)
-    .tabsheader
-        font-size: 22px
-    .tabsitem
-        font-size: 20px
+                @media(max-width: 1000px)
+                    font-size: 22px
 .hide
     display: none
 .show
@@ -298,8 +305,8 @@
         color:#007bff74
         position: absolute
         top: 20px 
-    .slides_descr
-        width: 25%
+    .slides-descr
+        width: 30%
         margin: $margin-center
         position: relative
         .descr-column
@@ -333,7 +340,7 @@
             height: 1px
             width: 105%
             background-color: #070606
-        .slides_wrap
+        .slides-wrap
             margin: 60px auto 0
             width: 100%
             height: 600px
@@ -368,7 +375,7 @@
                     font-size: 50px
                     cursor: pointer
                     color: #505050
-            .slides_inner
+            .slides-inner
                 display: flex
                 .slide-img
                     background: url(../../img/slides/1.jpg) $center-cover 
@@ -405,8 +412,8 @@
     font-size: 18px
     font-weight: 500
     margin-bottom: 60px
-.descr_activ
-    font-size: 23px;
+.descr-activ
+    font-size: 23px
     color:#007bff
 .dot 
     border-radius: 10px
@@ -420,10 +427,10 @@
 @media(max-width:1000px)
     .slides
         flex-direction: column-reverse
-    .slides_wrap
-        width: 90%
-    .slides_descr
-        margin: 0 auto
+        .slides-descr
+            margin: 0 auto
+            width: 65%
+    .slides-wrap
         width: 90%
 .cards
     padding: 10px
@@ -437,7 +444,7 @@
         font-weight: 500
         text-decoration: underline
         color: #007bff7d
-    .cards_wrap
+    .cards-wrap
         margin: 20px auto
         display: flex
         flex-wrap: wrap
@@ -487,7 +494,7 @@
                     font-size: 30px
                     margin-right: 20px
 @media(max-width:1600px)
-    .cards_wrap
+    .cards-wrap
         flex-wrap: wrap
     .card
         margin-top: 30px 

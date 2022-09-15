@@ -67,22 +67,22 @@ export default class Header extends Component {
         return(
             <>
                 <div class="header">
+                    <div className="navigation-column"></div>
+                    <div className="navigation-bottom"></div>
                     <Link to='/' className="logo"></Link>
                     <div class="navigation">
-                        <div className="navigation-column"></div>
-                        <div className="navigation-bottom"></div>
-                        <Link id="other" className="nav-item" to='/'>Home</Link>
-                        <Link id="other" className="nav-item" to='/amplifire'>Выбрать усилитель</Link>  
-                        <Link id="other" className="nav-item" to='/slider'>Производство усилителей</Link> 
-                        <Link id="catalog" className="nav-item" to='/cards'>Каталог товаров</Link>   
+                        <Link id="other" className="nav-item" to='/'><i class="fa-solid fa-house"></i> Home</Link>
+                        <Link id="other" className="nav-item" to='/amplifire'><i class="fa-solid fa-list"></i> Выбрать усилитель</Link>  
+                        <Link id="other" className="nav-item" to='/slider'><i class="fa-sharp fa-solid fa-screwdriver-wrench"></i> Производство усилителей</Link> 
+                        <Link id="catalog" className="nav-item" to='/cards'><i class="fa-solid fa-circle-plus"></i> Каталог товаров</Link>   
                         <div className="cards-category hide">
-                        <Link to='/amplifires'  className="category-item" >Усилители </Link>
-                        <Link to='/cable'  className="category-item" >Кабели</Link>
+                        <Link to='/amplifires'  className="category-item"><i class="fa-solid fa-volume-high"></i> Усилители</Link>
+                        <Link to='/cable'  className="category-item"><i class="fa-solid fa-plug"></i> Кабели</Link>
                         </div>
                     </div>
-                    <button onClick={this.openModal} class="btn_contact">Связаться с нами </button>
+                    <button onClick={this.openModal} class="btn-contact">Связаться с нами </button>
                 </div >
-                <div class="header__bottom"></div>
+                <div class="header-bottom"></div>
             </>
         )
     }

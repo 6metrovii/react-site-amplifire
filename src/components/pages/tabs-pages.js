@@ -15,14 +15,14 @@ export default class TabsPages extends Component {
                 item.classList.remove('show', 'fade');
             });
             tabs.forEach((item)=>{
-                item.classList.remove('tabsitem_activ');
+                item.classList.remove('tabsitem-activ');
             });
         }
         
         function tabsshow (i = 0){
             tabscontent[i].classList.add('show', 'fade');
             tabscontent[i].classList.remove('hide',);
-            tabs[i].classList.add('tabsitem_activ');
+            tabs[i].classList.add('tabsitem-activ');
         } 
         tabshide();
         tabsshow();
@@ -59,9 +59,9 @@ export default class TabsPages extends Component {
                     {tab5}
                     <div class="tabsheader">
                         Выберите свой усилитель 
-                        <div class="tabs__column"></div>
-                        <div class="tabsheader__bottom"></div>
-                        <div class="tabsitem tabsitem_activ">Amplifire A1</div>
+                        <div class="tabs-column"></div>
+                        <div class="tabsheader-bottom"></div>
+                        <div class="tabsitem tabsitem-activ">Amplifire A1</div>
                         <div class="tabsitem" >Amplifire A2</div>
                         <div class="tabsitem">Amplifire A3</div>
                         <div class="tabsitem">Amplifire A4</div>

@@ -9,10 +9,10 @@ export default class SliderPage extends Component {
         prev = document.querySelector('#l'),
         total = document.querySelector('#total'),
         current = document.querySelector('#current'),
-        slidesWrap = document.querySelector('.slides_wrap'),
-        slidesField = document.querySelector('.slides_inner'),
+        slidesWrap = document.querySelector('.slides-wrap'),
+        slidesField = document.querySelector('.slides-inner'),
         width = window.getComputedStyle(slidesWrap).width,
-        descr = document.querySelector('.slides_descr');
+        descr = document.querySelector('.slides-descr');
         
         let slideIndex = 1;
         let offset = 0;
@@ -51,7 +51,7 @@ export default class SliderPage extends Component {
             descr1.setAttribute('data-slide-to', i + 1);
             if(i === 0){
             dot.style.opacity = 1;
-            descr1.classList.add('descr_activ');
+            descr1.classList.add('descr-activ');
             }
             dots.append(dot);
             dotss.push(dot);
@@ -81,8 +81,8 @@ export default class SliderPage extends Component {
             dotss.forEach(dot => dot.style.opacity = 0.5);
             dotss[slideIndex - 1].style.opacity = 1;
             
-            descrs.forEach( des => des.classList.remove('descr_activ'));
-            descrs[slideIndex - 1].classList.add('descr_activ');
+            descrs.forEach( des => des.classList.remove('descr-activ'));
+            descrs[slideIndex - 1].classList.add('descr-activ');
         });
         
         
@@ -108,8 +108,8 @@ export default class SliderPage extends Component {
             dotss.forEach(dot => dot.style.opacity = 0.5);
             dotss[slideIndex - 1].style.opacity = 1; 
             
-            descrs.forEach( des => des.classList.remove('descr_activ'));
-            descrs[slideIndex - 1].classList.add('descr_activ');
+            descrs.forEach( des => des.classList.remove('descr-activ'));
+            descrs[slideIndex - 1].classList.add('descr-activ');
         });
         
         dotss.forEach(dot => {                                         
@@ -131,8 +131,8 @@ export default class SliderPage extends Component {
             dotss.forEach(dot => dot.style.opacity = 0.5);         
             dotss[slideTo - 1].style.opacity = 1;    
             
-            descrs.forEach( des => des.classList.remove('descr_activ'));           
-            descrs[slideIndex - 1].classList.add('descr_activ');
+            descrs.forEach( des => des.classList.remove('descr-activ'));           
+            descrs[slideIndex - 1].classList.add('descr-activ');
             });
         });
     }
@@ -140,14 +140,14 @@ export default class SliderPage extends Component {
     render(){
         return(
             <section class="slides"><span>Производство усилителей</span> 
-                <div class="slides_descr">
+                <div class="slides-descr">
                     <div className="descr-column"></div>
                     <div className="descr-bottom"></div>
                 </div>
                 <div className="slider">
                     <div className="slide-column"></div>
                     <div className="slide-bottom"></div>
-                    <div class="slides_wrap">
+                    <div class="slides-wrap">
                         <div className="slide-nav">
                             <i id="l"  class="fa-solid fa-angles-left"></i>
                             <div className="slide-counter">
@@ -157,7 +157,7 @@ export default class SliderPage extends Component {
                             </div>
                             <i id="r"  class="fa-solid fa-angles-right"></i>
                         </div>
-                        <div class="slides_inner">
+                        <div class="slides-inner">
                             <div class="slide">
                                 <div className="slide-img"></div>
                             </div>
@@ -173,7 +173,6 @@ export default class SliderPage extends Component {
                             <div class="slide">
                                 <div className="slide-img img55"></div>
                             </div>
-                                
                         </div>
                     </div>
                 </div>

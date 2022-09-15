@@ -14,7 +14,7 @@ const AmplifirePage = () => {
         <>
             <div class="cards" >
                 <div class="oup">Усилители</div>
-                <div class="cards_wrap">
+                <div class="cards-wrap">
                     {ampl1}
                     {ampl2}
                     {ampl3}

@@ -29,7 +29,7 @@ const Homepage = () => {
             <div className="eq eq22"></div>
             <div className="eq eq23"></div>
             <div className="eq eq24"></div>
-            <div className="title-homepage">Welcome to site amplifire. Pleace click main links</div>
+            <div className="title-homepage">Добро пожаловать на сайт усилителей собственного производства </div>
         </div>
     )
 }

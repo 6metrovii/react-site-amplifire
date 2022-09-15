@@ -8,7 +8,7 @@ const CardPage = () => {
         <>
             <div class="cards" >
                 <div class="oup">Каталог товаров</div>
-                <div class="cards_wrap">
+                <div class="cards-wrap">
                     {ampl1}
                     {cable1}
                     {ampl2}
